@@ -1,0 +1,21 @@
+{
+    "name": "heatmap-gl",
+    "version": "1.0.0",
+    "description": "WebGL2 powered fast heatmaps for spectrograms and more",
+    "homepage": "https://github.com/AliFlux/heatmap-gl",
+    "main": "dist/heatmap-gl.js",
+    "module": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AliFlux/heatmap-gl.git"
+    },
+    "author": "Ali Ashraf <aliashraf@outlook.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "webpack": "^5.68.0",
+        "webpack-cli": "^4.9.2"
+    }
+}
