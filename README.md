@@ -1,6 +1,6 @@
 # Heatmap-GL
 
-**WebGL2 powered fast heatmaps for spectrograms, analytics, scientific computing and more**
+**WebGL 2.0 powered fast heatmaps for spectrograms, analytics, scientific computing and more**
 
 <p align="center">
   <img src="images/pulse.gif" width="200" height="200">
@@ -12,20 +12,34 @@
   <img src="images/interactive.gif" width="200" height="200">
 </p>
 
-## Install
 
-**Just fetch this from npm via command line**
+## Install via npm
 
 ```sh
 npm install heatmap-gl
 ```
 
+And then in your code:
+
+```js
+import { HeatmapGL } from "heatmap-gl";
+```
+
+## Install via `<script>` tag from CDN
+
+```html
+<script src="view-source:https://unpkg.com/heatmap-gl@1.0.2/dist/heatmap-gl.js"></script>
+```
+
+And then in your code:
+
+```js
+var HeatmapGL = new window["heatmap-gl"].HeatmapGL;
+```
+
 ## How to use
 
 ```js
-
-import { HeatmapGL } from "heatmap-gl";
-
 var heatmapGL = new HeatmapGL(someDomElement)
 
 // specify gradient
@@ -69,9 +83,9 @@ Explore the [examples directory](/examples) for demos that you can run on your b
 
 ## Purpose
 
-There are lots of heatmaps for javascript. Almost all of them are just for user tracking (they only support drawing circles). I created a general purpose heatmap library that can accept raw data and be used for all sort of scientific and medical applications.
+There are lots of heatmaps for javascript. Almost all of them are just for user tracking (they only support drawing points/circles). I created a general purpose heatmap library that can accept raw 2D data and can be used for all sorts of scientific and medical applications.
 
-## Stay In Touch
+## Stay in touch
 
 For latest releases and announcements, check out my site: [aliashraf.net](http://aliashraf.net)
 
